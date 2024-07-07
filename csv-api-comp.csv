@@ -1,7 +1,7 @@
 Field;API Load;API Field;Format;Optional;Examples and notes
 Star Rating;nota;comments.[*].userComment.starRating;integer (between 1 and 5);NO;" "
-Reviewer Language;idiomaOriginal;comments.[*].userComment.reviewerLanguage;String - ISO 639-1 two-letter abbreviation;YES;en
-Review Text;comentarioOriginal;comments.[*].userComment.originalText;String, in the reviewer's local language (stripping newlines);YES;" "
+Reviewer Language;idioma;comments.[*].userComment.reviewerLanguage;String - ISO 639-1 two-letter abbreviation;YES;en
+Review Text;comentario;comments.[*].userComment.text;String, in the reviewer's local language (stripping newlines);YES;" "
 Review Last Update Date and Time;ultimaModificacao.comentario;comments.[*].userComment.lastModified.nano/segundos;ISO_8601 including time, UTC timezone;YES;2014-06-19T19:12:32Z
 Review Last Update Millis Since Epoch;ultimaModificacao.comentario;comments.[*].userComment.lastModified.nano/segundos;integer, milliseconds since epoch;YES;" "
 Device;dispositivo;comments.[*].userComment.device;String;YES;hammerhead
@@ -10,8 +10,8 @@ App Version Code;codigoVersaoApp;comments.[*].userComment.appVersionCode;integer
 Developer Reply Text;resposta;comments.[*].developerComment.text;String (stripping newlines and compressing whitespace);YES;" "
 Developer Reply Date and Time;ultimaModificacao.resposta;comments.[*].developerComment.lastModified.nano/segundos;ISO_8601 including time, UTC timezone;YES;2014-06-19T19:12:32Z
 Developer Reply Millis Since Epoch;ultimaModificacao.resposta;comments.[*].developerComment.lastModified.nano/segundos;integer, milliseconds since epoch;YES;" "
-Review Submit Date and Time;;anomesdia;ISO_8601 including time, UTC timezone;NO;2014-06-19T19:12:32Z
-Review Submit Millis Since Epoch;;anomesdia;integer, milliseconds since epoch;NO;" "
+Review Submit Date and Time;anomesdia;anomesdia;ISO_8601 including time, UTC timezone;NO;2014-06-19T19:12:32Z
+Review Submit Millis Since Epoch;anomesdia;anomesdia;integer, milliseconds since epoch;NO;" "
 Package Name;aplicativo;?;String;NO;com.company.app
-Review Link;;N.A;String;YES;https://play.google.com/apps/publish/?dev_acc=<...>#ReviewPlace:id=<..>
-Review Title;;?;String, in the reviewer's local language (stripping newlines);YES;" "
+Review Link;N.A;N.A;String;YES;https://play.google.com/apps/publish/?dev_acc=<...>#ReviewPlace:id=<..>
+Review Title;titulo;comments.[*].userComment.text;String, in the reviewer's local language (stripping newlines);YES;" "

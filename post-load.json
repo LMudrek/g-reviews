@@ -1,0 +1,24 @@
+{
+  "anomes": 202307,
+  "anomesdia": 20230723,
+  "aplicativo": "com.meuapp",
+  "id": "abc",
+  "nota": 1,
+  "idioma": "PT-BR",
+  "titulo": "TITULO",
+  "comentario": "lorem",
+  "resposta": "ipsum",
+  "dispositivo": "abc98",
+  "nomeVersaoApp": "1.0.0",
+  "codigoVersaoApp": 1,
+  "ultimaModificacao": {
+    "comentario": {
+      "nano": 456,
+      "segundos": 123
+    },
+    "resposta": {
+      "nano": 456,
+      "segundos": 123
+    }
+  }
+}

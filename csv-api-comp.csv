@@ -1,0 +1,17 @@
+Field;API Field;Format;Optional;Examples and notes
+App Version Code;comments.[*].userComment.appVersionCode;integer;YES;Production APKs only
+App Version Name;comments.[*].userComment.appVersionName;String;YES;" "
+Developer Reply Date and Time;;ISO_8601 including time, UTC timezone;YES;2014-06-19T19:12:32Z
+Developer Reply Millis Since Epoch;comments.[*].userComment.lastModified.?;integer, milliseconds since epoch;YES;" "
+Developer Reply Text;comments.[*].developerComment.text;String (stripping newlines and compressing whitespace);YES;" "
+Device;comments.[*].userComment.device;String;YES;hammerhead
+Package Name;;String;NO;com.company.app
+Review Last Update Date and Time;;ISO_8601 including time, UTC timezone;YES;2014-06-19T19:12:32Z
+Review Last Update Millis Since Epoch;comments.[*].userComment.lastModified.?;integer, milliseconds since epoch;YES;" "
+Review Link;;String;YES;https://play.google.com/apps/publish/?dev_acc=<...>#ReviewPlace:id=<..>
+Review Submit Date and Time;;ISO_8601 including time, UTC timezone;NO;2014-06-19T19:12:32Z
+Review Submit Millis Since Epoch;;integer, milliseconds since epoch;NO;" "
+Review Text;comments.[*].userComment.originalText;String, in the reviewer's local language (stripping newlines);YES;" "
+Review Title;;String, in the reviewer's local language (stripping newlines);YES;" "
+Reviewer Language;comments.[*].userComment.reviewerLanguage;String - ISO 639-1 two-letter abbreviation;YES;en
+Star Rating;comments.[*].userComment.starRating;integer (between 1 and 5);NO;" "

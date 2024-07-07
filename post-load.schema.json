@@ -1,0 +1,84 @@
+Here is the updated JSON schema with only the specified required fields:
+
+```json
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "anomes": {
+      "type": "integer"
+    },
+    "anomesdia": {
+      "type": "integer"
+    },
+    "aplicativo": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "nota": {
+      "type": "integer"
+    },
+    "idioma": {
+      "type": "string"
+    },
+    "titulo": {
+      "type": "string"
+    },
+    "comentario": {
+      "type": "string"
+    },
+    "resposta": {
+      "type": "string"
+    },
+    "dispositivo": {
+      "type": "string"
+    },
+    "nomeVersaoApp": {
+      "type": "string"
+    },
+    "codigoVersaoApp": {
+      "type": "integer"
+    },
+    "ultimaModificacao": {
+      "type": "object",
+      "properties": {
+        "comentario": {
+          "type": "object",
+          "properties": {
+            "nano": {
+              "type": "integer"
+            },
+            "segundos": {
+              "type": "integer"
+            }
+          },
+          "required": ["nano", "segundos"]
+        },
+        "resposta": {
+          "type": "object",
+          "properties": {
+            "nano": {
+              "type": "integer"
+            },
+            "segundos": {
+              "type": "integer"
+            }
+          },
+          "required": ["nano", "segundos"]
+        }
+      },
+      "required": ["comentario", "resposta"]
+    }
+  },
+  "required": [
+    "anomes",
+    "anomesdia",
+    "aplicativo",
+    "nota"
+  ]
+}
+```
+
+In this schema, only `anomes`, `anomesdia`, `aplicativo`, and `nota` are required fields.
